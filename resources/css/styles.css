@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px; 
+    /* mac dinh font-size la 16px */
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    /* cach sinh, the hien text */
+}
+/* ------------------------------------------------- */
+/* ---------------- HEADER ------------------------- */
+/* ------------------------------------------------- */
+header{
+    background-image: url(../img/background4.jpeg);
+    background-size: cover; /* bao phu toan bo phan html header*/
+    background-position: center;
+    height: 100vh; /*view height*/  
+    background-attachment: fixed; /* hieu ung anh background chuyen dong theo text*/
+}
+/* Lui vao phan heading text va button cua header */
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+.logo{
+    width: 350px;
+}
