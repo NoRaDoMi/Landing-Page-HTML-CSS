@@ -17,17 +17,62 @@ html{
 /* ---------------- HEADER ------------------------- */
 /* ------------------------------------------------- */
 header{
-    background-image: url(../img/background4.jpeg);
+    background-image: linear-gradient(45deg,rgba(2,33,64,0.8),55%,rgba(45,95,93,0.8)), url(../img/background4.jpeg);
     background-size: cover; /* bao phu toan bo phan html header*/
     background-position: center;
     height: 100vh; /*view height*/  
     background-attachment: fixed; /* hieu ung anh background chuyen dong theo text*/
 }
+
 /* Lui vao phan heading text va button cua header */
 .row{
     width: 1140px;
     margin: 0 auto;
 }
 .logo{
-    width: 350px;
+    width: 450px;
+
+    float: left;
+    margin-left: 20px;
+    margin-top: -80px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none; /*bo dau dau dong*/
+    margin-right: 50px;
+    margin-top: 55px;
+}
+
+/* Nhung link trong li bo dau gach duoi link*/
+.main-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 110%; /* de chinh responsive de dang hon */
+    font-weight: 700; /* ??? */
+    transition: border-bottom 1s; /* de in ra dau gach chan cham lai */
+    padding: 3px 0;
+}
+
+/* .main-nav li a:hover{
+    text-decoration: underline;
+}
+Nhưng làm như vậy thì không đẹp vì đường gạch chân dính liền với text -> dùng border
+*/
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cccccc;
+}
+
+/*Hien thi cac li tren cung 1 hang. Note: <li> : block*/
+.main-nav li{
+    display: inline-block;
+    margin-right: 30px; /*chinh la khoang cach giua cac nav*/
+}
+/*clearfix class de phan heading text va button khong chiu anh huong cua float*/
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
 }
