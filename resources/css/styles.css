@@ -21,61 +21,66 @@ html {
 /* ---------------- REUSABLE COMPONENTS -------------*/
 /* ------------------------------------------------- */
 .btn {
-    /* Bỏ dấu gạch dưới */
-    text-decoration: none;
-    color: white;
-    /* Do a la inline-block nen no chi chiem phan du dung */
-    background-color: #e67e22;
-    /* Chinh de border rong ra */
-    padding: 15px 30px;
-  
-    /* margin-top: 100px; -> không được */
-  
-    /* Bo tròn 2 button */
-    border-radius: 20px;
-    /* Nới rộng 2 button ra */
-    margin: 0 5px;
-  
-    /* Chỉnh cho 2 button có kích cỡ bằng nhau */
-    display: inline-block;
-    width: 190px;
-    text-align: center;
-  
-    /* Chỉnh cho button và text trong button đều đổi màu */
-    transition: all .3s;
-    /* Thay thế cho transiton: background-color 3s, color 3s */
-  }
-  
-  /* Chỉnh pseudo class cho button */
-  .btn:hover,
-  .bnt:active{
-      background-color: #d35400;
-      /* color: red */
-  }
-  
+  /* Bỏ dấu gạch dưới */
+  text-decoration: none;
+  color: white;
+  /* Do a la inline-block nen no chi chiem phan du dung */
+  background-color: #e67e22;
+  /* Chinh de border rong ra */
+  padding: 15px 30px;
+
+  /* margin-top: 100px; -> không được */
+
+  /* Bo tròn 2 button */
+  border-radius: 20px;
+  /* Nới rộng 2 button ra */
+  margin: 0 5px;
+
+  /* Chỉnh cho 2 button có kích cỡ bằng nhau */
+  display: inline-block;
+  width: 190px;
+  text-align: center;
+
+  /* Chỉnh cho button và text trong button đều đổi màu */
+  transition: all 0.3s;
+  /* Thay thế cho transiton: background-color 3s, color 3s */
+}
+
+/* Chỉnh pseudo class cho button */
+.btn:hover,
+.bnt:active {
+  background-color: #d35400;
+  /* color: red */
+}
+
 /*clearfix class de phan heading text va button khong chiu anh huong cua float*/
 .clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
-  }
+  content: " ";
+  display: table;
+  clear: both;
+}
 
 /* Lui vao phan heading text va button cua header */
 .row {
-    max-width: 1140px; /* lon nhat là 1140px, nhỏ hơn tùy ý */
-    margin: 0 auto;
-  }
+  max-width: 1140px; /* lon nhat là 1140px, nhỏ hơn tùy ý */
+  margin: 0 auto;
+}
 
-  /* Các thao tác với text */
-h1 {
+h1,
+h2 {
   /* Chỉnh toàn bộ text in hoa */
   text-transform: uppercase;
+  /* Khoảng cách giữa các chữ */
+  letter-spacing: 1px;
+}
+
+/* Các thao tác với text */
+h1 {
   /* Chỉnh cỡ chũ % để dễ responsive hơn*/
   font-size: 300%;
   /* Chỉnh độ dày của chữ */
   font-weight: 400;
-  /* Khoảng cách giữa các chữ */
-  letter-spacing: 1px;
+
   /* Khoảng cách giữa các chữ */
   word-spacing: 5px;
   color: white;
@@ -85,6 +90,38 @@ h1 {
   margin-bottom: 50px;
 }
 
+h2 {
+  color: #e67e22;
+  font-size: 180%;
+  font-weight: 700;
+  text-align: center;
+  /* margin-top: 70px;  hoac cach o duoi*/
+}
+
+section{
+  padding: 50px;
+}
+
+h2::after {
+  content: "";
+  display: block; /*de chen o duoi h2 chu khong chen phia sau h2*/
+  width: 150px;
+  height: 3px;
+  background-color: rgba(230, 126, 34, 0.4);
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.p-long {
+  text-align: center;
+  color: #265077;
+  font-size: 22px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 70%;
+  line-height: 140%;
+}
 /* ------------------------------------------------- */
 /* ---------------- HEADER ------------------------- */
 /* ------------------------------------------------- */
@@ -144,9 +181,6 @@ Nhưng làm như vậy thì không đẹp vì đường gạch chân dính liề
   margin-right: 30px; /*chinh la khoang cach giua cac nav*/
 }
 
-
-
-
 .heading-main-box {
   /*Kĩ thuật canh giữa: Cac thuoc tịnh de can giữa heading text */
   position: absolute; /* can theo vi tri ban cua text*/
@@ -161,7 +195,9 @@ Nhưng làm như vậy thì không đẹp vì đường gạch chân dính liề
   width: 1140px; /* trở về ban đầu */
 }
 
-
 /* ------------------------------------------------- */
 /* ----------------ABOUT SECTION---------------------*/
 /* ------------------------------------------------- */
+.about-section img{
+  width: 90%;
+}
