@@ -129,7 +129,7 @@ h3 {
 .p-long {
 	text-align: center;
 	color: #265077;
-	font-size: 22px;
+	font-size: 30px;
 	margin: 0 auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -306,4 +306,52 @@ Nhưng làm như vậy thì không đẹp vì đường gạch chân dính liề
 
 .product-box .btn {
 	margin-left: 20%;
+}
+
+/* ------------------------------------------------- */
+/* ----------------TESTIMAONIALS SECTION---------------------*/
+/* ------------------------------------------------- */
+.testimaonial-section {
+	background-image: linear-gradient(
+			45deg,
+			rgba(2, 33, 64, 0.8) 55%,
+			rgba(45, 95, 93, 0.85)
+		),
+		url('../img/background2.jpeg');
+	background-position: cover;
+	background-attachment: fixed;
+}
+
+.testimaonial-section h2 {
+	margin-bottom: 70px;
+}
+
+blockquote {
+	position: relative;
+	width: 90%;
+	font-style: italic;
+	line-height: 140%;
+	color: white;
+}
+
+blockquote::before {
+	content: '\201C';
+	display: block;
+	font-size: 400%;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+}
+
+cite {
+	display: inline-block;
+	color: #398ddb;
+	margin-top: 25px;
+}
+
+cite img {
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #3f6283;
+	vertical-align: middle; /*float: left;*/
 }
