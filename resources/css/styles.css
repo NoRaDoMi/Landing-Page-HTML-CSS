@@ -355,3 +355,45 @@ cite img {
 	border: 2px solid #3f6283;
 	vertical-align: middle; /*float: left;*/
 }
+
+/* ------------------------------------------------- */
+/* ----------------SPONSORS SECTION---------------------*/
+/* ------------------------------------------------- */
+.sponsor-section {
+	background-color: #f4f4f4;
+}
+
+.sponsor-section h2 {
+	margin-bottom: 40px;
+}
+
+.sponsor-picture {
+	position: relative;
+	/* background-color: #398ddb; */
+	margin-bottom: 30px;
+}
+.sponsor-picture img {
+	width: 38%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.sponsor-picture p {
+	text-align: center;
+	font-weight: 800;
+	color: #265077;
+	font-size: 120%;
+}
+
+.sponsor-picture:hover img,
+.sponsor-picture:active img {
+	transform: scale(1.1);
+	transition: all 1.8s;
+}
+
+/* Cach 2:
+
+
+
+*/
